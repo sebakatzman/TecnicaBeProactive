@@ -4,5 +4,39 @@
         <name>ApiDevBP</name>
     </assembly>
     <members>
+        <member name="M:ApiDevBP.Controllers.UsersController.SaveUser(Domain.Models.UserModel)">
+            <summary>
+            Crea un nuevo usuario.
+            </summary>
+            <param name="user">Los datos del usuario a crear.</param>
+            <returns>Devuelve un mensaje de éxito si el usuario es creado.</returns>
+        </member>
+        <member name="M:ApiDevBP.Controllers.UsersController.GetAll">
+            <summary>
+            Obtiene todos los usuarios.
+            </summary>
+            <returns>Devuelve una lista de todos los usuarios.</returns>
+        </member>
+        <member name="M:ApiDevBP.Controllers.UsersController.GetById(System.Int32)">
+            <summary>
+            Obtiene un usuario por su ID.
+            </summary>
+            <param name="id">El ID del usuario a obtener.</param>
+            <returns>Devuelve los datos del usuario si se encuentra, de lo contrario, devuelve un 404 Not Found.</returns>
+        </member>
+        <member name="M:ApiDevBP.Controllers.UsersController.Update(Domain.Models.UserModel)">
+            <summary>
+            Actualiza un usuario existente.
+            </summary>
+            <param name="user">Los datos actualizados del usuario.</param>
+            <returns>Devuelve un 204 No Content si la actualización es exitosa, o un 404 Not Found si el usuario no se encuentra.</returns>
+        </member>
+        <member name="M:ApiDevBP.Controllers.UsersController.Delete(System.Int32)">
+            <summary>
+            Elimina un usuario por su ID.
+            </summary>
+            <param name="id">El ID del usuario a eliminar.</param>
+            <returns>Devuelve un 204 No Content si la eliminación es exitosa, o un 404 Not Found si el usuario no se encuentra.</returns>
+        </member>
     </members>
 </doc>
